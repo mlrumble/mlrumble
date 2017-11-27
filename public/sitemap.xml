@@ -3,28 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>mlrumble.github.io/about/</loc>
+    <loc>http://mlrumble.github.io/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>mlrumble.github.io/author/</loc>
+    <loc>http://mlrumble.github.io/author/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>mlrumble.github.io/categories/</loc>
+    <loc>http://mlrumble.github.io/posts/blog-created/</loc>
+    <lastmod>2017-11-27T18:06:51+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mlrumble.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mlrumble.github.io/</loc>
+    <loc>http://mlrumble.github.io/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>mlrumble.github.io/tags/</loc>
+    <loc>http://mlrumble.github.io/posts/</loc>
+    <lastmod>2017-11-27T18:06:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mlrumble.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   

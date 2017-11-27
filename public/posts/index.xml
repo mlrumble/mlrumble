@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MLRumble</title>
-    <link>http://mlrumble.github.io/</link>
-    <description>Recent content on MLRumble</description>
+    <title>Posts on MLRumble</title>
+    <link>http://mlrumble.github.io/posts/</link>
+    <description>Recent content in Posts on MLRumble</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Nov 2017 18:06:51 +0530</lastBuildDate>
     
-	<atom:link href="http://mlrumble.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://mlrumble.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>http://mlrumble.github.io/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mlrumble.github.io/about/</guid>
-      <description>A blog for my Machine learning perumbulations.</description>
-    </item>
-    
-    <item>
-      <title>Author</title>
-      <link>http://mlrumble.github.io/author/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mlrumble.github.io/author/</guid>
-      <description>A not so known Machine Learning Engineer/ Data scientist. Will rather like to blog anonymously.</description>
-    </item>
     
     <item>
       <title>How I created this website using Hugo and used a custom domain with github pages</title>

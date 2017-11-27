@@ -1,11 +1,11 @@
-baseURL = "mlrumble.github.io"
+baseURL = "http://mlrumble.github.io"
 languageCode = "en-us"
 title = "MLRumble"
 theme = "kiera"
 
 pygmentsCodeFences = true
 
-disqusShortname = "mlwhiz" #Disqus shortname
+disqusShortname = "mlrumble" #Disqus shortname
 googleAnalytics = "" #Google Analytics ID
 
 [author]
@@ -18,5 +18,5 @@ googleAnalytics = "" #Google Analytics ID
     instagram = ""  #Instagram username
 
 [params]
-    tagline = "the tagline for this website"
+    tagline = "Code is life"
 

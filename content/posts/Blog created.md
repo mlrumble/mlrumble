@@ -226,10 +226,15 @@ After that run this on command line once in the root directory <kbd>mlrumble</kb
 
 And finally deploy again using: `sh deploy.sh`.
 
-## Formatting a Post:
-Check out the markdown that has been used to create this post at :
+* * *
 
+## Formatting Posts:
+Check out the markdown that has been used to create this post [here](https://raw.githubusercontent.com/mlrumble/mlrumble/master/content/posts/Blog%20created.md)
 
+Also check out the [Style Guide](https://avianto.github.io/hugo-kiera/posts/style-guide/) and [Image Style Guide](https://avianto.github.io/hugo-kiera/posts/image-content/)
 
+To see the .md files for these above style guides go to folder: <kbd>/themes/kiera/exampleSite/content/posts</kbd>
 
-You are up and running now. Enjoy!!!
+* * *
+
+Hope you liked this post. You are up and running now. Do comment if you get stuck or like this post. Enjoy!!!

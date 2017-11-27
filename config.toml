@@ -1,0 +1,22 @@
+baseURL = "mlrumble.github.io"
+languageCode = "en-us"
+title = "MLRumble"
+theme = "kiera"
+
+pygmentsCodeFences = true
+
+disqusShortname = "mlwhiz" #Disqus shortname
+googleAnalytics = "" #Google Analytics ID
+
+[author]
+    name = "MLRumble"       #Author name
+    github = "mlrumble"     #Github username
+    gitlab = ""     #Gitlab username
+    linkedin = ""   #LinkedIn username
+    facebook = ""   #Facebook username
+    twitter = "mlrumble"    #Twitter username
+    instagram = ""  #Instagram username
+
+[params]
+    tagline = "the tagline for this website"
+

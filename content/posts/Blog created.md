@@ -227,6 +227,15 @@ After that run this on command line once in the root directory <kbd>mlrumble</kb
 And finally deploy again using: `sh deploy.sh`.
 
 * * *
+## Add a Favicon:
+
+Add `favicon.ico` file to <kbd>static</kbd> folder.
+
+Go to <kbd>/themes/kiera/layouts/partials/header.html</kbd> and add the following line in the `<head>` tag:
+
+`<link rel="shortcut icon" href="/favicon.ico?v=kPP08pKEXB">`
+
+* * *
 
 ## Formatting Posts:
 Check out the markdown that has been used to create this post [here](https://raw.githubusercontent.com/mlrumble/mlrumble/master/content/posts/Blog%20created.md)

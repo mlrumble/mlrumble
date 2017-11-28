@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico?v=kPP08pKEXB">
 </head>
 
 <body>
@@ -26,17 +27,17 @@
                 
                 <li><a href="https://twitter.com/mlrumble"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
                 
-        
+
                 
-        
+
                 
                 <li><a href="https://github.com/mlrumble"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
                 
-        
+
                 
-        
+
                 
-        
+
                 
             </ul>
             
@@ -62,7 +63,7 @@
         
     </ul>
 </nav>
-        
+
         <main>
 
 
@@ -301,6 +302,16 @@ git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6
 <p>After that run this on command line once in the root directory <kbd>mlrumble</kbd>: <code>echo &quot;$mlrumble.com&quot; &gt; static/CNAME</code></p>
 
 <p>And finally deploy again using: <code>sh deploy.sh</code>.</p>
+
+<hr />
+
+<h2 id="add-a-favicon">Add a Favicon:</h2>
+
+<p>Add <code>favicon.ico</code> file to <kbd>static</kbd> folder.</p>
+
+<p>Go to <kbd>/themes/kiera/layouts/partials/header.html</kbd> and add the following line in the <code>&lt;head&gt;</code> tag:</p>
+
+<p><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico?v=kPP08pKEXB&quot;&gt;</code></p>
 
 <hr />
 

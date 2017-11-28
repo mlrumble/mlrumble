@@ -6,7 +6,7 @@ theme = "kiera"
 pygmentsCodeFences = true
 
 disqusShortname = "mlrumble" #Disqus shortname
-googleAnalytics = "" #Google Analytics ID
+googleAnalytics = "UA-110323565-1" #Google Analytics ID
 
 [author]
     name = "MLRumble"       #Author name

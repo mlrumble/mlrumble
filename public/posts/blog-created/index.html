@@ -14,6 +14,21 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="shortcut icon" href="/favicon.ico?v=kPP08pKEXB">
+
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="1764be6732a95474d415ef955627d41e880843d6e04f1a68e21e7cf823c03a42" async="async"></script>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110323565-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110323565-1');
+    </script>
+
+
 </head>
 
 <body>
@@ -84,7 +99,7 @@
 
         
 
-        <li>4 min read</li>
+        <li>5 min read</li>
     </ul>
 </aside>
     
@@ -313,6 +328,18 @@ git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6
 
 <p><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico?v=kPP08pKEXB&quot;&gt;</code></p>
 
+<hr />
+
+<h2 id="adding-google-analytics">Adding Google Analytics:</h2>
+
+<p>Get a tracking Id for the new site from Google Analytics Account and add this to the <kbd>/themes/kiera/layouts/partials/header.html</kbd> file in between the <code>&lt;head&gt;</code> tags:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span>&gt;
+      window.<span style="color:#a6e22e">dataLayer</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">dataLayer</span> <span style="color:#f92672">||</span> [];
+      <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gtag</span>(){<span style="color:#a6e22e">dataLayer</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">arguments</span>);}
+      <span style="color:#a6e22e">gtag</span>(<span style="color:#e6db74">&#39;js&#39;</span>, <span style="color:#66d9ef">new</span> Date());
+      <span style="color:#a6e22e">gtag</span>(<span style="color:#e6db74">&#39;config&#39;</span>, <span style="color:#e6db74">&#39;YOUR_TRACKING_ID&#39;</span>);
+    &lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
 <hr />
 
 <h2 id="formatting-posts">Formatting Posts:</h2>

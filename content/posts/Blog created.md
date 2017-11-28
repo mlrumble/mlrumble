@@ -236,6 +236,21 @@ Go to <kbd>/themes/kiera/layouts/partials/header.html</kbd> and add the followin
 `<link rel="shortcut icon" href="/favicon.ico?v=kPP08pKEXB">`
 
 * * *
+## Adding Google Analytics:
+
+Get a tracking Id for the new site from Google Analytics Account and add this to the <kbd>/themes/kiera/layouts/partials/header.html</kbd> file in between the `<head>` tags:
+
+```html
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+```
+
+* * *
 
 ## Formatting Posts:
 Check out the markdown that has been used to create this post [here](https://raw.githubusercontent.com/mlrumble/mlrumble/master/content/posts/Blog%20created.md)

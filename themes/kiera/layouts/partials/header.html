@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ .Site.Title }}</title>
-    <meta name="description" content="The HTML5 Herald">
+    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if $isHomePage }} {{ .Site.Params.description }}{{end}}{{ if eq $isHomePage false }}{{ .Description }}{{ end }}" property="description">
+    <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ if $isHomePage }} {{ .Site.Params.keywords }}{{end}}{{ if eq $isHomePage false }}{{  delimit .Keywords ", " }}{{ end }}" name="keywords">
     <meta name="author" content="{{ .Site.Author.name }}">
     {{ .Hugo.Generator }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">

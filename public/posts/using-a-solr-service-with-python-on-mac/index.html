@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MLRumble</title>
+    <meta content="Using a Solr Service with Python on Mac." property="description">
+    <meta content="OSX, Solr, Apache, Python" name="keywords">
+    <meta name="author" content="MLRumble">
+    <meta name="generator" content="Hugo 0.31" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico?v=kPP08pKEXB">
+
+    
+    <script src="//load.sumome.com/" data-sumo-site-id="1764be6732a95474d415ef955627d41e880843d6e04f1a68e21e7cf823c03a42" async="async"></script>
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110323565-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110323565-1');
+    </script>
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <a href="/">MLRumble</a>
+            </h1>
+
+            <ul id="social-media">
+                
+                <li><a href="https://twitter.com/mlrumble"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                
+
+                
+
+                
+                <li><a href="https://github.com/mlrumble"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                
+
+                
+
+                
+
+                
+            </ul>
+            
+            <p><em>Code is life</em></p>
+            
+        </header>
+
+        
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/author/">
+                <i class="fa-li fa  fa-lg"></i><span>Author</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+        <main>
+
+
+
+
+<article>
+
+    <h1>Using a Solr Service with Python on Mac</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2017-11-28T18:06:51&#43;05:30">Nov 28, 2017</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    
+
+<p>Started working on Solr for some search thing recently. It is difficult to find simple instructions to get it up and running. So here is my effort on the same.</p>
+
+<h2 id="1-install-solr-server-on-your-laptop">1. Install Solr Server on your Laptop</h2>
+
+<p>I am using a Mac so the simplest way I could do that is by using</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Install Solr Server
+</span><span style="color:#75715e"></span>brew install solr
+<span style="color:#75715e"># Start Solr Server with example configuration
+</span><span style="color:#75715e"></span>solr -e techproducts
+<span style="color:#75715e"># Install solr for Python
+</span><span style="color:#75715e"></span>pip install pysolr</code></pre></div>
+<p>Running the command <code>solr -e techproducts</code> gives us this message, and a whole lot of other things:</p>
+
+<p><code>
+Waiting up to 180 seconds to see Solr running on port 8983 [\]
+Started Solr server on port 8983 (pid=93066). Happy searching!
+</code>
+You can Direct your Web browser to <a href="http://localhost:8983/solr">http://localhost:8983/solr</a> to visit the Solr Admin UI.
+Now the fun part starts.</p>
+
+<hr />
+
+<h2 id="2-use-python-to-access-the-solrserver">2. Use python to access the SolrServer</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pysolr
+solr <span style="color:#f92672">=</span> pysolr<span style="color:#f92672">.</span>Solr(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;http://localhost:8983/solr/techproducts&#39;</span>,timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+<span style="color:#75715e"># Clean up the Techproducts Solr Database(if that&#39;s what it is called)</span>
+solr<span style="color:#f92672">.</span>delete(q<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;*:*&#39;</span>)
+<span style="color:#75715e"># Documents to be indexed. You can get that in any form but</span>
+<span style="color:#75715e"># finally create a list of dicts</span>
+items <span style="color:#f92672">=</span> [{<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;1&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;text in action&#34;</span> },{<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;2&#34;</span>,<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;title&#34;</span>: <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;text in action party&#34;</span> }]
+<span style="color:#75715e"># Add documents to be indexed on the SolrCore</span>
+solr<span style="color:#f92672">.</span>add(items)
+results <span style="color:#f92672">=</span> solr<span style="color:#f92672">.</span>search(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;party&#39;</span>)
+<span style="color:#75715e"># See results</span>
+<span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> results
+    <span style="color:#66d9ef">print</span> r</code></pre></div>
+<p>Result :</p>
+
+<p><code>{u'_version_': 1585397928998993920, u'id': u'2', u'title': [u'text in action party']}</code></p>
+
+<p>Checkout &ldquo;<a href="https://github.com/django-haystack/pysolr&quot;">https://github.com/django-haystack/pysolr&quot;</a> for more options in pySolr</p>
+
+<p>Hope that was helpful.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="http://mlrumble.github.io/posts/blog-created/"><i class="fa fa-chevron-circle-left"></i> How I created this Website using Hugo and used a custom domain with github pages</a>
+        </li>
+        
+        
+    </ul>
+</section>
+    
+        <section class="comments-block"></section>
+
+<section id="disqus_thread"></section>
+
+<script>
+
+(function() { 
+      if (window.location.hostname == "localhost")
+          return;
+
+      var disqus_loaded = false;
+      var disqus_shortname = 'mlrumble';
+
+      var d = document, s = d.createElement('script');
+      s.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+})();
+
+</script>
+
+
+
+    
+
+
+
+
+</main>
+    <footer>
+        <h6>
+            Copyright © 2014-2017 - MLRumble | Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="http://mlrumble.github.io/index.xml">Subscribe RSS</a></h6>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+</body>
+
+</html>

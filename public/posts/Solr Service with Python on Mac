@@ -1,0 +1,26 @@
+---
+title: "Using a Solr Service with Python on Mac::"
+date: 2017-11-28T18:06:51+05:30
+draft: true
+---
+
+
+# Install Solr Server on your Laptop
+I am using a Mac so the simplest way I could do that is by using
+
+```bash
+# Install Solr Server
+brew install solr
+# Start Solr Server
+solr start
+# Install solr for Python
+pip install solrpy
+```
+
+Running the command `solr start` gives us this message:
+
+`
+Waiting up to 180 seconds to see Solr running on port 8983 [\]
+Started Solr server on port 8983 (pid=93066). Happy searching!
+`
+

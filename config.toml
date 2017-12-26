@@ -19,4 +19,5 @@ googleAnalytics = "UA-110323565-1" #Google Analytics ID
 
 [params]
     tagline = "Code is life"
-
+    description = "A Data Science Learning Resource to learn about AI, Deep Learning, NLP"
+    keywords = "python,data science,machine learning, analytics, big data, bigdata, maths, shell, bash, awk, hadoop, spark, statistics, data analysis, data science, classification, regression, vowpal wabbit, spearmint, random forest"

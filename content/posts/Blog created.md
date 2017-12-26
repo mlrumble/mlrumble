@@ -1,7 +1,15 @@
 ---
-title: "How I created this website using Hugo and used a custom domain with github pages"
+title: "How I created this Website using Hugo and used a custom domain with github pages"
 date: 2017-11-27T18:06:51+05:30
 draft: false
+keywords:
+  - hugo
+  - kiera theme
+  - custom domain
+  - github pages
+  - favicon
+  - Google analytics
+description: Easy way to Create Website using Hugo and used a custom domain with github pages.
 ---
 * * *
 
@@ -63,7 +71,7 @@ googleAnalytics = "" #Google Analytics ID
 
 ## Adding Pages:
 
-if you want to add a page about for your website add *about.md* in the <kbd>content</kbd>kbd> directory
+if you want to add a page about for your website add *about.md* in the <kbd>content</kbd> directory
 
 ```md
 +++

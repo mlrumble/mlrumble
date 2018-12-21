@@ -1,7 +1,6 @@
 +++
 date = "2018-12-06T18:30:00+00:00"
 description = "Review of Andrew NG Deep learning course."
-draft = true
 keywords = ["Neural Networks", " Deep Learning"]
 title = "Deep Learning By Andrew NG Course review"
 

@@ -6,7 +6,7 @@ keywords = []
 title = "asda"
 
 +++
-{{% tip %}} Tip Body asdasfdasd {{% /tip %}}
+{{% tip "Tip Title" %}} Tip Body {{% /tip %}}
 
 
 python

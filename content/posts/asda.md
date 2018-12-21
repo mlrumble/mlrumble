@@ -6,12 +6,11 @@ keywords = []
 title = "asda"
 
 +++
-    
-    
-    
-    
-    python
-    asdas
-    ```
+{{% tip %}} Tip Body asdasfdasd {{% /tip %}}
+
+
+python
+asdas
+\`\`\`
 
 # sdfdsaf

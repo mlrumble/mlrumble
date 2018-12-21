@@ -7,7 +7,7 @@ title = "Deep Learning By Andrew NG Course review"
 +++
 I recently completed the first [deep learning course](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=467035.11421701992&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fneural-networks-deep-learning) by Andrew Ng and I definitely am feeling enlightened. Takes me back to those early days when Andrew came up with his first [machine learning course](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=467035.1560515719&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fmachine-learning).
 
-{{< figure src="../../images/DL12.png" class="mid" caption="Deep Learning Course Structure" >}}
+![](/uploads/DL12.png)
 
 About the course, Andrew has achieved mastery in explaining difficult concepts in an easy to understand way. The nomenclature he follows is different from all other tutorials and courses on the net, and I hope it catches on as it is pretty helpful in understanding all the basic concepts.
 

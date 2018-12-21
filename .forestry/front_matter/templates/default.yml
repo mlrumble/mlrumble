@@ -8,11 +8,15 @@ fields:
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: date
   label: Date
   type: datetime
   hidden: false
   default: ''
+  config:
+    required: true
 - name: keywords
   label: Keywords
   type: list
@@ -23,4 +27,5 @@ fields:
   type: text
   hidden: false
   default: ''
-- type: text
+  config:
+    required: true

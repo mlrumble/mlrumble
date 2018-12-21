@@ -1,23 +1,19 @@
 baseURL = "http://mlrumble.github.io"
+disqusShortname = "mlrumble"
+googleAnalytics = "UA-110323565-1"
 languageCode = "en-us"
-title = "MLRumble"
-theme = "kiera"
-
 pygmentsCodeFences = true
-
-disqusShortname = "mlrumble" #Disqus shortname
-googleAnalytics = "UA-110323565-1" #Google Analytics ID
-
+theme = "kiera"
+title = "MLRumble"
 [author]
-    name = "MLRumble"       #Author name
-    github = "mlrumble"     #Github username
-    gitlab = ""     #Gitlab username
-    linkedin = ""   #LinkedIn username
-    facebook = ""   #Facebook username
-    twitter = "mlrumble"    #Twitter username
-    instagram = ""  #Instagram username
-
+facebook = ""
+github = "mlrumble"
+gitlab = ""
+instagram = ""
+linkedin = ""
+name = "MLRumble"
+twitter = "mlrumble"
 [params]
-    tagline = "Code is life"
-    description = "A Data Science Learning Resource to learn about AI, Deep Learning, NLP"
-    keywords = "python,data science,machine learning, analytics, big data, bigdata, maths, shell, bash, awk, hadoop, spark, statistics, data analysis, data science, classification, regression, vowpal wabbit, spearmint, random forest"
+description = "A Data Science Learning Resource to learn about AI, Deep Learning, NLP"
+keywords = "python,data science,machine learning, analytics, big data, bigdata, maths, shell, bash, awk, hadoop, spark, statistics, data analysis, data science, classification, regression, vowpal wabbit, spearmint, random forest"
+tagline = "Code is life"

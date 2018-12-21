@@ -7,9 +7,14 @@ title = "asda"
 
 +++
 
+ python asdas 
 
-python
-asdas
+\`\`\`python
+
+What the heck?
+
+import sys
+
 \`\`\`
 
 # sdfdsaf

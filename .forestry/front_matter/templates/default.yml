@@ -29,3 +29,5 @@ fields:
   default: ''
   config:
     required: true
+pages:
+- content/posts/asda.md

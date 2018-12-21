@@ -29,3 +29,5 @@ fields:
   default: ''
   config:
     required: true
+pages:
+- content/posts/deep-learning-by-andrew-ng-course-review.md
